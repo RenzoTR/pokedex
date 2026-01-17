@@ -18,7 +18,7 @@
 .water{background-color:  
     #678fee;
 }
-.eletric{background-color:  
+.electric{background-color:  
     #f6cf2e;
 }
 .ice{background-color:  
@@ -126,12 +126,19 @@
 
 .pagination button{
     margin: .25rem 0;
-    background-color: #6c79db;
+    background-color: #da8020;
     border: none;
     border-radius: 1rem;
     color: white;
     padding: .25rem .5rem;
     font-size: .825rem;
+    pointer-events: all;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.pagination button:hover{
+    background-color: #444447;
 }
 
 @media screen and (min-width: 380px){
