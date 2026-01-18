@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/pokemon-details.css">
+
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="pokemonDetails" class="pokemon-details">
+        <header class="details-topbar">
+            <button id="backButton" class="icon-button" type="button" aria-label="Voltar">←</button>
+        </header>
+
+        <section id="hero" class="details-hero">
+            <!-- preenchido via JS -->
+        </section>
+
+        <section class="details-sheet">
+            <nav class="details-tabs" aria-label="Abas">
+                <button class="details-tab is-active" data-tab="about" type="button">About</button>
+                <button class="details-tab" data-tab="stats" type="button">Base Stats</button>
+                <button class="details-tab" data-tab="evolution" type="button">Evolution</button>
+                <button class="details-tab" data-tab="moves" type="button">Moves</button>
+            </nav>
+            <div id="tabContent" class="details-tab-content">
+                <!-- preenchido via JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/pokemon-details.js"></script>
+</body>
+</html>
